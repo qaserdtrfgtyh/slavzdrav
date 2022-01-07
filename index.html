@@ -1,0 +1,794 @@
+<html>
+
+<link rel="shortcut icon" href="Иконка.png" type="image/x-icon">
+
+<title>Славянская Здрава</title>
+
+<style>
+body::-webkit-scrollbar {
+  width: 12px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: white;
+  ransition-duration:0.8s;
+  /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid orange;  /* padding вокруг плашки */
+}
+body::-webkit-scrollbar-track:hover {
+  background: gray;}
+
+  
+body::-webkit-scrollbar-thumb:hover {
+  background-color: yellow;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid white;}
+  
+body::-webkit-scrollbar-thumb:active {
+  background-color: green;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+  border: 3px solid orange;}
+  
+
+html {
+  scroll-behavior: smooth;
+}
+.instabutt{
+position: absolute;
+top: 200px; left: 150px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.instabutt1{
+background-color: #f8f32b;
+
+}
+.instabutt1:hover{
+background-color: #ffffff;
+color: black;
+
+}
+.instabutt1:active{
+transform: translateY(8px);
+
+}
+.vkbutt{
+position: absolute;
+top: 250px; left: 150px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.vkbutt1{
+background-color: #f8f32b;
+
+}
+.vkbutt1:hover{
+background-color: #ffffff;
+color: black;
+}
+.vkbutt1:active{
+transform: translateY(8px);
+
+}
+.hat{
+position:absolute;
+top: 40px; left: 30px;
+}
+@font-face {
+    font-family: Yermak;
+    src: url(Yermak.ttf);
+   }
+   h1 {
+    font-family: Yermak, 'Comic Sans MS', cursive;
+   }
+.roll{
+position:absolute;
+top: 40px; left: 500px;
+
+}
+
+.kedr{
+position:absolute;
+top: 420px; left: 40px;
+ransition-duration: 0.4s;
+
+}
+.kedr:active{
+transform: translateY(6px);
+}
+.len{
+position:absolute;
+top: 420px; left: 300px;
+ransition-duration: 0.4s;
+
+}
+.len:active{
+transform: translateY(6px);
+
+}
+
+.kon{
+position:absolute;
+top: 420px; left: 600px;
+ransition-duration: 0.4s;
+
+}
+.kon:active{
+transform: translateY(6px);
+}
+
+
+.kun{
+position:absolute;
+top: 420px; left: 900px;
+ransition-duration: 0.4s;
+
+}
+.kun:active{
+transform: translateY(6px);
+}
+
+.gre{
+position:absolute;
+top: 420px; left: 1200px;
+ransition-duration: 0.4s;
+
+}
+.gre:active{
+transform: translateY(6px);
+}
+
+
+.txt{
+position:absolute;
+top: 380px; left: 700px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txt2{
+position:absolute;
+top: 1960px; left: 700px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txtK{
+position:absolute;
+top: 660px; left: 150px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txtL{
+position:absolute;
+top: 50px; left: 340px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txtKO{
+position:absolute;
+top: 50px; left: 370px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txtKU{
+position:absolute;
+top: 50px; left: 390px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txtGR{
+position:absolute;
+top: 60px; left: 400px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.pay{
+position: absolute;
+top: 730px; left: 1210px;
+background-color: #ffffff;
+border: 12px;
+border-radius: 10px;
+color: black;
+padding: 8px 3px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: default;
+transition-duration: 0.2s;
+}
+.pay2{
+position: absolute;
+top: 730px; left: 900px;
+background-color: #ffffff;
+border: 12px;
+border-radius: 10px;
+color: black;
+padding: 8px 3px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: default;
+transition-duration: 0.2s;
+}
+.pay3{
+position: absolute;
+top: 730px; left: 610px;
+background-color: #ffffff;
+border: 12px;
+border-radius: 10px;
+color: black;
+padding: 8px 3px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: default;
+transition-duration: 0.2s;
+}
+.pay4{
+position: absolute;
+top: 730px; left: 310px;
+background-color: #ffffff;
+border: 12px;
+border-radius: 10px;
+color: black;
+padding: 8px 3px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: default;
+transition-duration: 0.2s;
+}
+.pay5{
+position: absolute;
+top: 730px; left: 40px;
+background-color: #ffffff;
+border: 12px;
+border-radius: 10px;
+color: black;
+padding: 8px 3px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: default;
+transition-duration: 0.2s;
+}
+
+.pay1{
+background-color: #cfb53b;
+
+}
+.pay1:hover{
+background-color: #ffffff;
+color: black;
+text-decoration: underline;
+}
+.pay1:active{
+transition-duration: 0.1s;
+transform: translateY(4px);}
+
+
+.img{
+position:absolute;
+top: 1600px; left:-330px ;
+}
+.img:hover{
+transform: translateY(3px);
+cursor: help;
+}
+.left{
+position:absolute;
+top: 2460px; left: 24px;
+}
+.right{
+position:absolute;
+top: 2460px; left: 1240px;
+}
+.textx{
+position:absolute;
+top: 2600px; left: 275px;
+}
+.zag{
+position:absolute;
+top: 2500px; left:700px ;
+text-transform: uppercase;
+color: transparent;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.news{
+position:absolute;
+top: 3450px; left:700px ;
+text-transform: uppercase;
+color: transparent;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+
+}
+
+.href1{
+position:absolute;
+top: 3500px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href2{
+position:absolute;
+top: 3550px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href3{
+position:absolute;
+top: 3600px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href4{
+position:absolute;
+top: 3650px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href5{
+position:absolute;
+top: 3700px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href6{
+position:absolute;
+top: 3750px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href7{
+position:absolute;
+top: 3800px; left: 100;
+color:green;
+letter-spacing: 5px;
+size: 8px;
+background-color: #fdd700;
+border: 12px;
+border-radius: 12px;
+color: gray;
+padding: 8px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 24px;
+box-shadow: 0 12px 16px 0 rgba(12,0,12,0.20), 0 12px 20px 0 rgba(0,12,0,0.19);
+cursor: pointer;
+transition-duration: 0.4s;
+}
+.href1:hover{
+color:white;
+}
+.href2:hover{
+color:white;
+}
+.href3:hover{
+color:white;
+}
+.href4:hover{
+color:white;
+}
+.href5:hover{
+color:white;
+}
+.href6:hover{
+color:white;
+}
+.href7:hover{
+color:white;
+}
+</style>
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="400"
+style="width:100%; border-radius:5px; border-color:; ">
+
+<div>
+
+<p>
+
+<font class="txt" size="5" color="yellow" face="Times News Roman">Наша продукция
+
+</p>
+
+</div>
+
+<tr>
+
+<td>
+
+<body bgcolor="#000000">
+
+<img src="Шапка.JPG" width="500" height="170" class="hat">
+
+<img src="КРУГ.jpg" class="roll">
+
+<input type="image" src="ШИШ.png" width="184" height="184" class="kedr" onclick=""/>
+
+<input type="image" src="Лён.jpg" width="184" height="184" class="len" onclick=""/>
+
+<input type="image" src="КО.png" width="184" height="184" class="kon" onclick=""/>
+
+<input type="image" src="КУН.jpg" width="184" height="184" class="kun" onclick=""/>
+
+<input type="image" src="ГРЕ.jpg" width="184" height="184" class="gre" onclick=""/>
+
+<button class="instabutt instabutt1" onclick="window.location.href='https://www.instagram.com/slavyanskaya_zdrava_/'">Мы в Инстаграмм</button>
+
+<button class="vkbutt vkbutt1" onclick="window.location.href='https://vk.com/slavyanskayazdravaeco'">Мы в ВКонтакте</button>
+
+<button class="pay pay1">Описание продукта</button>
+
+<button class="pay2 pay1">Описание продукта</button>
+
+<button class="pay3 pay1">Описание продукта</button>
+
+<button class="pay4 pay1">Описание продукта</button>
+
+<button class="pay5 pay1">Описание продукта</button>
+
+<font class="txtK" size="5" color="yellow" face="Yermak">
+&nbsp;Живое 
+<br>
+Кедровое 
+<br>
+&nbsp;масло
+</p>
+
+
+
+<font class="txtL" size="5" color="yellow" face="Yermak">
+&nbsp;Живое 
+<br>
+Льняное 
+<br>
+&nbsp;масло
+</p>
+
+
+
+<font class="txtKO" size="5" color="yellow" face="Yermak">
+&nbsp;&nbsp;Живое 
+<br>
+Конопляное
+<br>
+&nbsp;&nbsp;масло
+</p>
+
+<font class="txtKU" size="5" color="yellow" face="Yermak">
+&nbsp;&nbsp;Живое 
+<br>
+Кунжутное
+<br>
+&nbsp;&nbsp;масло
+</p>
+
+<font class="txtGR" size="5" color="yellow" face="Yermak">
+&nbsp;&nbsp;Живое 
+<br>
+&nbsp;&nbsp;масло
+<br>
+&nbsp;Грецкого
+&nbsp;&nbsp;ореха
+</p>
+
+</td>
+
+
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="170"
+style="width:100%; border-radius:5px; border-color:; ">
+
+
+<td>
+
+
+
+
+<font class="nam" face="Yermak" size="5" color="cian">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Почему стоит покупать у нас
+
+
+<br><br><br>✔Персональный отжим масла каждому покупателю!
+
+<br><br>✔Ваше масло, отжимается только для Вас. У нас нет заранее заготовленных масел, простаивающих на полках огромными партиями т.к. живые масла имеют ограничения по условиям хранения. Кроме того, мы стремимся донести до вашего стола максимально полезный продукт со всеми его ценными свойствами!
+
+<br><br>✔Отжимаем масло сразу в стеклянные бутылки (без фильтрации). 
+Бутылки тёмного стекла имеют защиту от окисления.
+
+<br><br>✔Давим в деревянном прессе ясеневого бочонка. Никаких шнеков, высоких температур и прочих нюансов для погони за объемами. Только ВЫСШЕЕ КАЧЕСТВО ЭКСТРА класса. Приоритет Нашего Бренда. Все масла - ЖИВЫЕ!
+
+<br><br>✔Тщательный отбор семян. Мы закупаем свежее семя у лучших производителей. Выбираем лучшие сорта. Моем, сушим семена. И производим отборные масла.
+
+<br><br>✔Отправляем вам заказ ЛЮБЫМ Удобным для Вас способом!
+
+<br><br>✔Делаем с ЛЮБОВЬЮ и самыми Светлыми мыслями для Вас ЗОЛОТОЙ ОБЕРЕГ Здоровья )/<font>
+
+
+
+
+</td>
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="260"
+style="width:100%; border-radius:5px; border-color:; ">
+
+
+
+<tr>
+
+<td>
+
+
+
+<font class="txt2" size="5" color="yellow" face="Times News Roman">&nbsp;&nbsp;&nbsp;Технология производства</p>
+
+</td>
+
+<input type="image" onclick="window.location.href='ТЕХ.html'" target="_top" width="720" height="390" class="img win2" src="ТЕХ.png">
+
+
+
+
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="475"
+style="width:100%; border-radius:5px; border-color:; ">
+
+<td>
+
+<font class="zag" size="6">ФилософиЯ БРЕНДА</font>
+
+
+
+<image src="Лево.jpg" class="left">
+<font class="textx" face="Times News Roman" size="5" color="white">Славянская ЗдРАва - не просто марка продукции. <br>Это Уникальный Бренд с Философией Экологичной Жизни!<br> Живое конопляное, амарантовое масло и другие живые масла, протеин и урбечи - <br>мы производим поистине бесценные натуральные и полезнейшие продукты для здоровья <br>наших потребителей. <br>Мы создаем ЗОЛОТОЙ ОБЕРЕГ ВАШЕГО ЗДОРОВЬЯ! <br>Вся наша продукция производится по технологиям предков с сохранением Живой клетки и <br>ЖИВительной Энергии. <br>Мы также изготавливаем по заказу одежду из конопли, крапивы и других эко тканей с <br>сакральными обережными вышивками.<br> Организовываем и проводим занятия на тренажёре ПравИло для коррекции телесных зон, <br>сеансы биоэнергетики, ретриты и регрессы.<br> Всё, что направлено на оздоровление Духа и Тела и комфортную жизнь и РАзвитие.<br> Наше дело - СЕМЕЙНОЕ. И за качество отвечает не одно поколение нашего РОДа.<br> Мы создаем свою продукцию с Любовью и рады предложить ее Вам!</font>
+<image src="Право.jpg" class="right">
+
+
+</td>
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="260"
+style="width:100%; border-radius:5px; border-color:; ">
+
+
+<td>
+<font class="news" size="6" face="Yermak">Новости и статьи </font>
+
+<input type="button" onclick="window.location.href='https://vk.com/wall-209649576_60'" class="href1" value="10 ПРИЧИН Полюбить ЖИВЫЕ Сыродавленные Масла">
+<a href="https://vk.com/wall-209649576_59" class="href2">Куда и как употреблять ЖИВЫЕ масла</a>
+<a href="https://vk.com/wall-209649576_54" class="href3">7 степеней защиты для нашей продукции</a>
+<a href="https://vk.com/wall-209649576_53" class="href4">Мы выбираем только качественные семена и орехи для наших масел</a>
+<a href="https://vk.com/wall-209649576_50" class="href5">В чем отличие сыродавленного масла от масла холодного отжима</a>
+<a href="https://vk.com/wall-209649576_46" class="href6">Разрушение мифов о сыродавленном масле</a>
+<a href="https://vk.com/wall-209649576_42" class="href7">КАК МЫ ПРОИЗВОДИМ НАШИ ЖИВЫЕ МАСЛА ДЛЯ ВАС</a>
+
+
+
+</td>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
