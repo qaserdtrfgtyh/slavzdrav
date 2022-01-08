@@ -5,6 +5,59 @@
 <title>Славянская Здрава</title>
 
 <style>
+.container_slider_css {
+  margin: 50px auto;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  top: 4000px; left: 500px;
+}
+
+.photo_slider_css {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+  width: 100%;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+img:nth-child(1) {
+  animation-delay: 12s;
+}
+
+img:nth-child(2) {
+  animation-delay: 8s;
+}
+
+
+
+img:nth-child(4) {
+  animation-delay: 0s;
+}
+
+@media(min-width:0px) and (max-width:320px) {
+    /* совсем маленькие экраны андроидов */
+    .container_slider_css{
+          width: 80%;
+          height: 190px;
+    }
+}
+ 
+@media(min-width:321px) and (max-width:480px) {
+    /* популярные разрешения смартфонов уже более позднего поколения андроид */
+    .container_slider_css{
+          width: 80%;
+          height: 190px;
+     }
+}
 body::-webkit-scrollbar {
   width: 12px;               /* ширина scrollbar */
 }
@@ -644,6 +697,19 @@ color: black;
 transform: translateY(8px);
 
 }
+.fooo{
+position:absolute;
+top: 4000px; left: 700px;
+text-transform: uppercase;
+color: transparent;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default
+}
 </style>
 
 <table
@@ -859,6 +925,36 @@ style="width:100%; border-radius:5px; border-color:; ">
 <input type="button" class="buthowpay2 buthowpay21" onclick="window.location.href=''" value="Доставка">
 
 <input type="button" class="buthowpay3 buthowpay31" onclick="window.location.href=''" value="Сотрудничество">
+
+</td>
+
+
+
+<table
+border="10"
+bgcolor="#000000"
+background=""
+cellpadding="150"
+style="width:100%; border-radius:5px; border-color:; ">
+
+<td>
+
+<font class="fooo" size=6>Отзывы</font>
+
+<div width=120 height=120 class="container_slider_css">
+  <img class='photo_slider_css'  src="Отзыв1.png" alt="" />
+  <img class='photo_slider_css'  src="Отзыв2.png" alt="" />
+  <img class='photo_slider_css'  src="Отзыв3.png" alt="" />
+</div>
+
+
+
+</td>
+
+
+
+
+
 
 </body>
 
