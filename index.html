@@ -45,42 +45,35 @@ check()
   }
 }
 img2:nth-child(1) {
-  animation-delay: 16s;
-}
-
-img2:nth-child(2) {
   animation-delay: 12s;
 }
 
-img2:nth-child(3) {
+img2:nth-child(2) {
   animation-delay: 8s;
 }
 
-img2:nth-child(4) {
+img2:nth-child(3) {
   animation-delay: 4s;
 }
-
-img2:nth-child(5) {
-  animation-delay: 0s;
+.container_slider_css3 {
+  margin: 50px auto;
+  width: 500px;
+  height: 3000px;
+  overflow: hidden;
+  position: absolute;
+  top: 4250px; left: 30px;
+}
+.container_slider_css4 {
+  margin: 50px auto;
+  width: 1200px;
+  height: 3000px;
+  overflow: hidden;
+  position: absolute;
+  top: 4250px; left: 500px;
 }
 
 
 
-@media(min-width:0px) and (max-width:320px) {
-    /* совсем маленькие экраны андроидов */
-    .container_slider_css{
-          width: 80%;
-          height: 190px;
-    }
-}
- 
-@media(min-width:321px) and (max-width:480px) {
-    /* популярные разрешения смартфонов уже более позднего поколения андроид */
-    .container_slider_css{
-          width: 80%;
-          height: 190px;
-     }
-}
 .container_slider_css {
   margin: 50px auto;
   width: 500px;
@@ -119,21 +112,7 @@ img:nth-child(4) {
   animation-delay: 0s;
 }
 
-@media(min-width:0px) and (max-width:320px) {
-    /* совсем маленькие экраны андроидов */
-    .container_slider_css{
-          width: 80%;
-          height: 190px;
-    }
-}
- 
-@media(min-width:321px) and (max-width:480px) {
-    /* популярные разрешения смартфонов уже более позднего поколения андроид */
-    .container_slider_css{
-          width: 80%;
-          height: 190px;
-     }
-}
+
 body::-webkit-scrollbar {
   width: 8px;               /* ширина scrollbar */
 }
@@ -291,6 +270,20 @@ transform: translateY(6px);
 .txt{
 position:absolute;
 top: 380px; left: 700px;
+text-transform: uppercase;
+color: transparent;
+position: absolute;
+transform: translate(-50%, -50%);
+font-family: 'Yermak', serif;
+letter-spacing: 5px;
+font-weight: bold;
+background-image: linear-gradient(to right, #cfb53b 0, #d4af37 22%, #ffd276, #ffd274 50%, #ffd274 55%, #eedc82 78%, #40360a 100%);
+-webkit-background-clip: text;
+cursor: default;
+}
+.txt12{
+position:absolute;
+top: 4330px; left: 670px;
 text-transform: uppercase;
 color: transparent;
 position: absolute;
@@ -1021,9 +1014,9 @@ style="width:100%; border-radius:5px; border-color:; ">
 <font class="fooo" size=6>Отзывы</font>
 
 <div width=120 height=120 class="container_slider_css">
-  <img class='photo_slider_css'  src="Отзыв1.png" alt="" />
-  <img class='photo_slider_css'  src="Отзыв2.png" alt="" />
-  <img class='photo_slider_css'  src="Отзыв3.png" alt="" />
+  <img class='photo_slider_css'  src="Отзыв1.png"  />
+  <img class='photo_slider_css'  src="Отзыв2.png"  />
+  <img class='photo_slider_css'  src="Отзыв3.png"  />
 </div>
 
 
@@ -1036,7 +1029,7 @@ style="width:100%; border-radius:5px; border-color:; ">
 border="10"
 bgcolor="#000000"
 background=""
-cellpadding="500"
+cellpadding="200"
 style="width:100%; border-radius:5px; border-color:; ">
 
 
@@ -1044,13 +1037,31 @@ style="width:100%; border-radius:5px; border-color:; ">
 
 <td>
 
-<div width=120 height=120 class="container_slider_css2">
-  <img class='photo_slider_css'  src="Фт1.jpg" alt="" />
-  <img class='photo_slider_css'  src="Фт2.jpg" alt="" />
-  <img class='photo_slider_css'  src="Фт3.jpg" alt="" />
-  <img class='photo_slider_css'  src="Фт4.jpg" alt="" />
-  <img class='photo_slider_css'  src="Фт5.jpg" alt="" />
+<font class="txt12" size="4">Нас Рекомендуют / Наши Партнёры - экомаркеты Крыма</font>
+
+
+<div class="">
+  <img class=''  src="Фото1.jpg"  />
+  <img class=''  src="Фото2.jpg"  />
+  <img class=''  src="Фото3.jpg"  />
 </div>
+
+
+<div class="">
+  <img class=''  src="Фото4.jpg"  />
+  <img class=''  src="Фото5.jpg"  />
+  <img class=''  src="Фото6.jpg"  />
+</div>
+
+
+<div class="">
+  <img class=''  src="Фото7.jpg"  />
+  <img class=''  src="Фото8.jpg"  />
+  <img class=''  src="Фото9.jpg"  />
+</div>
+
+
+
 
 </td>
 
